@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "334285629555",
+    "firebase_url": "https://semesterproject-sarasavi.firebaseio.com",
+    "project_id": "semesterproject-sarasavi",
+    "storage_bucket": "semesterproject-sarasavi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:334285629555:android:209f168e10aec278",
+        "android_client_info": {
+          "package_name": "com.example.cm139.semester4_androidproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "334285629555-3hq9scd6qekreeaedk5d1999duh56noc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cm139.semester4_androidproject",
+            "certificate_hash": "2c53b20c23e5673ea611d54c3be7f68cc4544267"
+          }
+        },
+        {
+          "client_id": "334285629555-36o8pgku44c3j91btc43b9q0dvbpoa7g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPwERmkbdWE-UwfPifp9iaSTee3UG9dEg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "334285629555-36o8pgku44c3j91btc43b9q0dvbpoa7g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

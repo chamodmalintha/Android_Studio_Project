@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/mainbackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btnmainlogin"
+            android:layout_width="123dp"
+            android:layout_height="64dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginBottom="33dp"
+            android:text="Login"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnmainsignup"
+            android:layout_width="123dp"
+            android:layout_height="64dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="217dp"
+            android:layout_marginLeft="217dp"
+            android:layout_marginBottom="33dp"
+            android:text="Sign Up"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtsarasavi"
+            android:layout_width="360dp"
+            android:layout_height="125dp"
+            android:layout_alignEnd="@+id/btnmainlogin"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="118dp"
+            android:layout_marginEnd="-216dp"
+            android:text="SARASAVI"
+            android:textColor="@color/colorAccent"
+            android:textSize="85sp"
+            app:fontFamily="@font/amarante" />
+
+        <TextView
+            android:id="@+id/txtsarasavi2"
+            android:layout_width="249dp"
+            android:layout_height="76dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="-368dp"
+            android:layout_toStartOf="@+id/btnmainsignup"
+            android:text="Order Your Book Now"
+            android:textColor="@color/colorAccent"
+            android:textSize="30sp"
+            app:fontFamily="@font/arizonia" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
