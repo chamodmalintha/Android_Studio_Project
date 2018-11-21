@@ -1,4 +1,5 @@
 package com.example.cm139.semester4_androidproject;
+import com.example.cm139.semester4_androidproject.Common.Common;
 import com.example.cm139.semester4_androidproject.Model.User;
 import com.google.firebase.analytics.FirebaseAnalytics;
 
@@ -51,10 +52,17 @@ public class Login extends AppCompatActivity {
 
                             if (user.getPassword().equals(phonenumber.getText().toString())) {
                                 Toast.makeText(Login.this, "Login Successfull ", Toast.LENGTH_SHORT).show();
+
                                 Intent goToHome = new Intent(Login.this, Home.class);
+                                //create variable to store current user
+                                Common.currentUser = user;
                                 startActivity(goToHome);
+
+
                                 password.setText("");
                                 phonenumber.setText("");
+                                finish();
+
                             } else {
                                 Toast.makeText(Login.this, "Login Failed!!! ", Toast.LENGTH_SHORT).show();
                             }

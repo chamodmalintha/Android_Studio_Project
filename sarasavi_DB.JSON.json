@@ -1,0 +1,50 @@
+
+
+{
+  "Category" : {
+  
+    "01" : {
+      "Name" : "Children's Books",
+      "Image" : "https://www.google.lk/search?q=sinhala+children%27s+books&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjQgbCZ8-LeAhUX5o8KHfVeAeQQ_AUIDigB&biw=1536&bih=706#imgrc=1hTX8zeJIwAUbM:"
+    },
+    
+    "02" : {
+      "Name" : "Novels",
+      "Image" : "https://www.google.lk/search?biw=1536&bih=706&tbm=isch&sa=1&ei=WvTzW7adJ8T_vgTQpa_QAw&q=sinhala+novels&oq=sinhala+novels&gs_l=img.3..0l10.83778.85163..85648...0.0..0.100.564.5j1......1....1..gws-wiz-img.gGvgzxW31go#imgrc=DofoDH23Jmq8VM:"
+    },
+    
+    "03" : {
+      "Name" : "Translations",
+      "Image" : "https://www.google.lk/search?biw=1536&bih=706&tbm=isch&sa=1&ei=sfTzW7XWJ8bbvASgiZH4Ag&q=sinhala+tarzan+books&oq=sinhala+tarzan+books&gs_l=img.3..0i8i30.59160.63448..63722...0.0..0.97.1056.12......1....1..gws-wiz-img.......0j0i10i24.zIBtVjHYCno#imgrc=i44bbhG8nA0cUM:"
+    },
+    
+    "04" : {
+      "Name" : "Story Books",
+      "Image" : "https://www.google.lk/search?biw=1536&bih=706&tbm=isch&sa=1&ei=LvXzW-KhIMGLvQTyobzQBA&q=sinhala+book+upan+da+sita&oq=sinhala+book+upan+da+sita&gs_l=img.3...11509.17116..17374...1.0..0.159.2473.0j18......1....1..gws-wiz-img.......0j0i30j0i5i30.tGJoCxgyna4#imgdii=yuot6A2uwjQpmM:&imgrc=IUt7OPwoE6u08M:"
+    },
+    
+    "05" : {
+      "Name" : "Children's English Books",
+      "Image" : "https://www.google.lk/search?biw=1536&bih=706&tbm=isch&sa=1&ei=fPXzW4mpJ4frvgTq1ojADQ&q=ladybird+childrens+books&oq=lady+bird+ch&gs_l=img.3.2.0l2j0i10l8.2918.3927..7830...0.0..0.105.289.2j1......1....1..gws-wiz-img.......0i67j0i10i67.RW8kkcAPQFg#imgrc=15XNfNB5obdqJM:"
+    },
+    
+    "06" : {
+      "Name" : "English Books"
+      "Image" : "https://www.google.lk/search?biw=1536&bih=706&tbm=isch&sa=1&ei=hvXzW_-fDYOYvQTp_KCIAQ&q=game+of+thrones+books&oq=game+&gs_l=img.3.0.0i67j0j0i67j0l4j0i67j0l2.30379.31072..33250...0.0..0.141.566.1j4......1....1..gws-wiz-img.OAw6sEFnS08#imgrc=kVGuaC_C0l_DpM:"
+    }
+    
+  },
+  
+  "User" : {
+    "0717720612" : {
+      "Name" : "chamod",
+      "Password" : "12345"
+    },
+    "0718395314" : {
+      "Name" : "deshanjali",
+      "Password" : "12345"
+    }
+  }
+  
+  
+}
