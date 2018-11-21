@@ -1,5 +1,6 @@
 package com.example.cm139.semester4_androidproject;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
@@ -63,7 +64,11 @@ public class BookList extends AppCompatActivity {
                 viewHolder.setItemClickListener(new ItemClickListener() {
                     @Override
                     public void onClick(View view, int position, boolean isLongClick) {
-                        Toast.makeText(BookList.this, "" + local.getName(), Toast.LENGTH_SHORT).show();
+                        //Start New Activity
+                        Intent bookDetails = new Intent(BookList.this, BookDetails.class);
+                        bookDetails.putExtra("BookId",adapter.getRef(position).getKey());       // send BookId to new Activity
+                        startActivity(bookDetails);
+
 
                     }
                 });
