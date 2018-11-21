@@ -21,7 +21,9 @@
 
     <include
         android:id="@+id/action"
-        layout="@layout/content_home" />
+        layout="@layout/content_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
@@ -29,6 +31,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        app:srcCompat="@drawable/ic_add_shopping_cart_black_50dp" />
 
 </android.support.design.widget.CoordinatorLayout>
