@@ -79,12 +79,14 @@ public class Home extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+
+
         //Set Name for User
         View headerView = navigationView.getHeaderView(0);
-        txtFullName = (TextView)findViewById(R.id.txtFullName);
+        txtFullName = (TextView)headerView.findViewById(R.id.txtFullName);
         txtFullName.setText(Common.currentUser.getName());
 
-        //Load Book Categories
+        //Load Menu
         recycler_menu = (RecyclerView)findViewById(R.id.recycler_menu);
         recycler_menu.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this);
@@ -109,11 +111,13 @@ public class Home extends AppCompatActivity
                     @Override
                     public void onClick(View view, int position, boolean isLongClick) {
 
+                        Toast.makeText(Home.this,"BOOKS BOOKS BOOKS BOOKS BOOKS", Toast.LENGTH_SHORT).show();
+
                         //get CategoryId and send to new activity
-                        Intent bookList = new Intent(Home.this,BookList.class);
+                        //Intent bookList = new Intent(Home.this,BookList.class);
                         //CategoryId is the key.So get the Key
-                        bookList.putExtra("CategoryId",adapter.getRef(position).getKey());
-                        startActivity(bookList);
+                        //bookList.putExtra("CategoryId",adapter.getRef(position).getKey());
+                        //startActivity(bookList);
                     }
                 });
 
@@ -121,6 +125,8 @@ public class Home extends AppCompatActivity
             }
         };
         recycler_menu.setAdapter(adapter);
+
+
     }
 
     @Override
@@ -142,15 +148,7 @@ public class Home extends AppCompatActivity
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action) {
-            return true;
-        }
 
         return super.onOptionsItemSelected(item);
     }

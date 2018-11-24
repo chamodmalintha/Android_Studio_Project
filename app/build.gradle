@@ -30,7 +30,7 @@ dependencies {
 
     //after adding these two lines of code error removed but app still not working properly
     implementation 'com.android.support:support-v4:28.0.0'
-    implementation 'com.android.support:design:28.0.0'
+
     //*****************************************************
 
     testImplementation 'junit:junit:4.12'

@@ -1,5 +1,6 @@
 package com.example.cm139.semester4_androidproject;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -52,6 +53,12 @@ public class SignUp extends AppCompatActivity {
                             User user = new User(txtname.getText().toString(),txtpassword.getText().toString());
                             table_user.child(txtphone.getText().toString()).setValue(user);
                             Toast.makeText(SignUp.this, "New User Registered ", Toast.LENGTH_SHORT).show();
+                            Intent goToHome = new Intent(SignUp.this, Home.class);
+                            startActivity(goToHome);
+
+
+
+
                             finish();
 
                         }

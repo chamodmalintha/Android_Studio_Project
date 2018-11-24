@@ -50,7 +50,7 @@ public class Login extends AppCompatActivity {
 
                             User user = dataSnapshot.child(phonenumber.getText().toString()).getValue(User.class);
 
-                            if (user.getPassword().equals(phonenumber.getText().toString())) {
+                            if (user.getPassword().equals(password.getText().toString())) {
                                 Toast.makeText(Login.this, "Login Successfull ", Toast.LENGTH_SHORT).show();
 
                                 Intent goToHome = new Intent(Login.this, Home.class);
@@ -82,6 +82,8 @@ public class Login extends AppCompatActivity {
                 });
             }
         });
+
+
 
 
 
