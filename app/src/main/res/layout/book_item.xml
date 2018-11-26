@@ -26,14 +26,14 @@
 
         <TextView
             android:id="@+id/book_name"
-            android:layout_width="136dp"
-            android:layout_height="52dp"
+            android:layout_width="wrap_content"
+            android:layout_height="102dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_marginTop="91dp"
-            android:layout_marginEnd="44dp"
-            android:layout_marginRight="44dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
             android:text="Name Of Book"
             android:textSize="24sp" />
     </RelativeLayout>

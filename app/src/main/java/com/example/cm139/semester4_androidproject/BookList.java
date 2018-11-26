@@ -53,7 +53,7 @@ public class BookList extends AppCompatActivity {
         adapter = new FirebaseRecyclerAdapter<Book, BookViewHolder>(Book.class,
                 R.layout.book_item,
                 BookViewHolder.class,
-                bookList.orderByChild("CategoryId").equalTo(categoryId) //select * from Books where CategoryId = categoryId;
+                bookList.orderByChild("Category_ID").equalTo(categoryId) //select * from Books where CategoryId = categoryId;
                 ) {
             @Override
             protected void populateViewHolder(BookViewHolder viewHolder, Book model, int position) {

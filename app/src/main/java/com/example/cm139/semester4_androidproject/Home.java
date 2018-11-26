@@ -111,13 +111,12 @@ public class Home extends AppCompatActivity
                     @Override
                     public void onClick(View view, int position, boolean isLongClick) {
 
-                        Toast.makeText(Home.this,"BOOKS BOOKS BOOKS BOOKS BOOKS", Toast.LENGTH_SHORT).show();
 
                         //get CategoryId and send to new activity
-                        //Intent bookList = new Intent(Home.this,BookList.class);
+                        Intent bookList = new Intent(Home.this,BookList.class);
                         //CategoryId is the key.So get the Key
-                        //bookList.putExtra("CategoryId",adapter.getRef(position).getKey());
-                        //startActivity(bookList);
+                        bookList.putExtra("CategoryId",adapter.getRef(position).getKey());
+                        startActivity(bookList);
                     }
                 });
 
