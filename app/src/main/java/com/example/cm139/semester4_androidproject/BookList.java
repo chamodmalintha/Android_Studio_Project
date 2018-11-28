@@ -3,6 +3,7 @@ package com.example.cm139.semester4_androidproject;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Toast;
@@ -37,6 +38,7 @@ public class BookList extends AppCompatActivity {
 
         recyclerView= (RecyclerView)findViewById(R.id.recycler_book);
         recyclerView.setHasFixedSize(true);
+        layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
 
         //Get Intent

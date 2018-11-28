@@ -9,10 +9,12 @@
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="258dp"
         android:id="@+id/recycler_book"
-        android:scrollbars="vertical"
-        />
+        android:scrollbars="vertical">
+
+    </android.support.v7.widget.RecyclerView>
+
 
 
 
