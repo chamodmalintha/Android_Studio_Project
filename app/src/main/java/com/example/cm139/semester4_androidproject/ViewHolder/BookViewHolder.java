@@ -12,7 +12,7 @@ import com.example.cm139.semester4_androidproject.R;
 public class BookViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
     public TextView book_Name;
-    public ImageView book_image;
+    public ImageView book_Image;
 
     private ItemClickListener itemClickListener;
 
@@ -22,7 +22,7 @@ public class BookViewHolder extends RecyclerView.ViewHolder implements View.OnCl
         super(itemView);
 
         book_Name = (TextView)itemView.findViewById(R.id.book_name);
-        book_image = (ImageView)itemView.findViewById(R.id.book_image);
+        book_Image = (ImageView)itemView.findViewById(R.id.book_image);
 
         itemView.setOnClickListener(this);
 

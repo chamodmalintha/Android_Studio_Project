@@ -58,16 +58,16 @@ public class BookList extends AppCompatActivity {
             @Override
             protected void populateViewHolder(BookViewHolder viewHolder, Book model, int position) {
                 viewHolder.book_Name.setText(model.getName());
-                Picasso.with(getBaseContext()).load(model.getImage()).into(viewHolder.book_image);
+                Picasso.with(getBaseContext()).load(model.getImage()).into(viewHolder.book_Image);
 
                 final Book local = model;
                 viewHolder.setItemClickListener(new ItemClickListener() {
                     @Override
                     public void onClick(View view, int position, boolean isLongClick) {
                         //Start New Activity
-                        Intent bookDetails = new Intent(BookList.this, BookDetails.class);
-                        bookDetails.putExtra("BookId",adapter.getRef(position).getKey());       // send BookId to new Activity
-                        startActivity(bookDetails);
+                       // Intent bookDetails = new Intent(BookList.this, BookDetails.class);
+                       // bookDetails.putExtra("BookId",adapter.getRef(position).getKey());       // send BookId to new Activity
+                       // startActivity(bookDetails);
 
 
                     }

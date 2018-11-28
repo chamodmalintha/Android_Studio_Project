@@ -43,9 +43,9 @@ public class BookDetails extends AppCompatActivity {
         btnCart = (FloatingActionButton)findViewById(R.id.btncart);
 
         book_description = (TextView)findViewById(R.id.book_description);
-        book_name = (TextView)findViewById(R.id.book_name);
+        book_name = (TextView)findViewById(R.id.details_book_name);
         book_price = (TextView)findViewById(R.id.book_price);
-        book_image = (ImageView)findViewById(R.id.img_book);
+        book_image = (ImageView)findViewById(R.id.details_img_book);
 
         collapsingToolbarLayout = (CollapsingToolbarLayout)findViewById(R.id.collapsing);
         collapsingToolbarLayout.setExpandedTitleTextAppearance(R.style.ExpandedAppBar);
