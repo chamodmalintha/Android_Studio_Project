@@ -18,7 +18,7 @@ import com.squareup.picasso.Picasso;
 
 public class BookDetails extends AppCompatActivity {
 
-    TextView book_name,book_price,book_description;
+    TextView book_name,book_price;
     ImageView book_image;
     CollapsingToolbarLayout collapsingToolbarLayout;
     FloatingActionButton btnCart;
@@ -42,7 +42,7 @@ public class BookDetails extends AppCompatActivity {
         numberButton = (ElegantNumberButton)findViewById(R.id.number_button);
         btnCart = (FloatingActionButton)findViewById(R.id.btncart);
 
-        book_description = (TextView)findViewById(R.id.book_description);
+
         book_name = (TextView)findViewById(R.id.details_book_name);
         book_price = (TextView)findViewById(R.id.book_price);
         book_image = (ImageView)findViewById(R.id.details_img_book);

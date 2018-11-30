@@ -8,29 +8,29 @@
 
     <RelativeLayout
         android:id="@+id/relativeLayout2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginLeft="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginRight="1dp"
-        android:background="@drawable/loginbackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.9"
+        android:background="@drawable/signupback"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
         <EditText
             android:id="@+id/txtloginphonenumber"
-            android:layout_width="wrap_content"
+            android:layout_width="321dp"
             android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtloginpassword"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="195dp"
+            android:layout_marginTop="180dp"
             android:ems="10"
             android:hint="Phone Number"
             android:inputType="textPersonName"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/colorAccent"
+            android:textColorLink="@color/colorAccent"
             android:textSize="30sp"
             tools:layout_editor_absoluteX="13dp"
             tools:layout_editor_absoluteY="208dp" />
@@ -39,26 +39,29 @@
             android:id="@+id/btnloginmain"
             android:layout_width="145dp"
             android:layout_height="63dp"
+
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="53dp"
+            android:layout_marginBottom="42dp"
             android:text="Login"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/colorPrimary"
             android:textSize="24sp" />
 
         <EditText
             android:id="@+id/txtloginpassword"
-            android:layout_width="wrap_content"
+            android:layout_width="323dp"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="17dp"
             android:layout_marginLeft="17dp"
-            android:layout_marginBottom="236dp"
+            android:layout_marginBottom="215dp"
             android:ems="10"
+            android:hint="Password"
             android:inputType="textPassword"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/colorAccent"
+            android:textColorLink="@color/colorAccent"
             android:textSize="30sp" />
     </RelativeLayout>
 

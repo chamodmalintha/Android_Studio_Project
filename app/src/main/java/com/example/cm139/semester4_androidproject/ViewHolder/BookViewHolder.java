@@ -29,11 +29,12 @@ public class BookViewHolder extends RecyclerView.ViewHolder implements View.OnCl
     }
 
     @Override
-    public void onClick(View v) {
-        itemClickListener.onClick(v,getAdapterPosition(),false);
+    public void onClick(View view) {
+        itemClickListener.onClick(view,getAdapterPosition(),false);
 
     }
 
     public void setItemClickListener(ItemClickListener itemClickListener) {
+        this.itemClickListener = itemClickListener;
     }
 }

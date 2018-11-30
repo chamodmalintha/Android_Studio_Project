@@ -113,10 +113,10 @@ public class Home extends AppCompatActivity
 
 
                         //get CategoryId and send to new activity
-                        Intent bookList = new Intent(Home.this,BookList.class);
+                        Intent gotobookList = new Intent(Home.this,BookList.class);
                         //CategoryId is the key.So get the Key
-                        bookList.putExtra("CategoryId",adapter.getRef(position).getKey());
-                        startActivity(bookList);
+                        gotobookList.putExtra("CategoryId",adapter.getRef(position).getKey());
+                        startActivity(gotobookList);
                     }
                 });
 
@@ -130,12 +130,7 @@ public class Home extends AppCompatActivity
 
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
-        }
+        System.exit(1);
     }
 
     @Override
@@ -165,6 +160,9 @@ public class Home extends AppCompatActivity
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {
+            Intent login = new Intent(Home.this, Login.class);
+            login.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(login);
 
         }
 

@@ -7,10 +7,8 @@
     tools:context=".MainActivity">
 
     <RelativeLayout
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginBottom="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:background="@drawable/mainbackground"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,7 +26,7 @@
             android:layout_marginLeft="35dp"
             android:layout_marginBottom="33dp"
             android:text="Login"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="20sp" />
 
         <Button
@@ -42,7 +40,7 @@
             android:layout_marginLeft="217dp"
             android:layout_marginBottom="33dp"
             android:text="Sign Up"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="20sp" />
 
         <TextView
@@ -51,8 +49,8 @@
             android:layout_height="125dp"
             android:layout_alignEnd="@+id/btnmainlogin"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="118dp"
-            android:layout_marginEnd="-216dp"
+            android:layout_marginTop="122dp"
+            android:layout_marginEnd="-202dp"
             android:text="SARASAVI"
             android:textColor="@color/colorAccent"
             android:textSize="85sp"
@@ -60,8 +58,8 @@
 
         <TextView
             android:id="@+id/txtsarasavi2"
-            android:layout_width="249dp"
-            android:layout_height="76dp"
+            android:layout_width="267dp"
+            android:layout_height="74dp"
             android:layout_centerVertical="true"
             android:layout_marginEnd="-368dp"
             android:layout_toStartOf="@+id/btnmainsignup"

@@ -55,7 +55,7 @@ public class BookList extends AppCompatActivity {
         adapter = new FirebaseRecyclerAdapter<Book, BookViewHolder>(Book.class,
                 R.layout.book_item,
                 BookViewHolder.class,
-                bookList.orderByChild("Category_ID").equalTo(categoryId) //select * from Books where CategoryId = categoryId;
+                bookList.orderByChild("MenuId").equalTo(categoryId) //select * from Books where MenuId = categoryId;
                 ) {
             @Override
             protected void populateViewHolder(BookViewHolder viewHolder, Book model, int position) {
@@ -66,11 +66,9 @@ public class BookList extends AppCompatActivity {
                 viewHolder.setItemClickListener(new ItemClickListener() {
                     @Override
                     public void onClick(View view, int position, boolean isLongClick) {
-                        //Start New Activity
-                       // Intent bookDetails = new Intent(BookList.this, BookDetails.class);
-                       // bookDetails.putExtra("BookId",adapter.getRef(position).getKey());       // send BookId to new Activity
-                       // startActivity(bookDetails);
-
+                        Intent bookdetails = new Intent(BookList.this, BookDetails.class);
+                        bookdetails.putExtra("BookId",adapter.getRef(position).getKey());
+                        startActivity(bookdetails);
 
                     }
                 });

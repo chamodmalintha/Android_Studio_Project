@@ -1,16 +1,16 @@
 package com.example.cm139.semester4_androidproject.Model;
 
 public class Book {
-    private  String Name,Image,Price,CategoryId;
+    private  String Name,Image,Price,MenuId;
 
     public Book() {
     }
 
-    public Book(String name, String image, String price, String categoryId) {
+    public Book(String name, String image, String price, String menuId) {
         Name = name;
         Image = image;
         Price = price;
-        CategoryId = categoryId;
+        MenuId = menuId;
     }
 
     public String getName() {
@@ -37,11 +37,11 @@ public class Book {
         Price = price;
     }
 
-    public String getCategoryId() {
-        return CategoryId;
+    public String getMenuId() {
+        return MenuId;
     }
 
-    public void setCategoryId(String categoryId) {
-        CategoryId = categoryId;
+    public void setMenuId(String menuId) {
+        MenuId = menuId;
     }
 }

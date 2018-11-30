@@ -8,9 +8,10 @@
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
-        android:layout_width="384dp"
-        android:layout_height="0dp"
-        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.9"
+        android:background="@drawable/signupback"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -29,7 +30,7 @@
             android:layout_marginLeft="119dp"
             android:layout_marginBottom="40dp"
             android:text="Sign Up"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="24sp" />
 
         <EditText
@@ -46,6 +47,7 @@
             android:hint="Password"
             android:inputType="textPassword"
             android:textColor="@color/colorPrimary"
+            android:textColorLink="@color/colorAccent"
             android:textSize="30sp" />
 
         <EditText
@@ -59,6 +61,7 @@
             android:ems="10"
             android:hint="Username"
             android:inputType="textPersonName"
+            android:textColor="@color/colorAccent"
             android:textSize="30sp" />
 
         <EditText
@@ -72,6 +75,7 @@
             android:ems="10"
             android:hint="Name"
             android:inputType="textPersonName"
+            android:textColor="@color/colorAccent"
             android:textSize="30sp" />
 
         <EditText
@@ -85,6 +89,7 @@
             android:ems="10"
             android:hint="Phone Number"
             android:inputType="textPersonName"
+            android:textColor="@color/colorAccent"
             android:textSize="30sp" />
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
