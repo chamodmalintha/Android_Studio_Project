@@ -154,10 +154,16 @@ public class Home extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
+            Intent intent = new Intent(Home.this, Home.class);
+            startActivity(intent);
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
+            Intent intent = new Intent(Home.this, Cart.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_slideshow) {
+            Intent intent = new Intent(Home.this, OrderStatus.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_manage) {
             Intent login = new Intent(Home.this, Login.class);

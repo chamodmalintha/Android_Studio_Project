@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+
+
 import com.amulyakhare.textdrawable.TextDrawable;
 import com.example.cm139.semester4_androidproject.Interface.ItemClickListener;
 import com.example.cm139.semester4_androidproject.Model.Order;
@@ -19,6 +21,15 @@ import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+
+
+
+
+
+
+
+
+
 
 class CartViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
@@ -60,19 +71,26 @@ public class CartAdapter extends RecyclerView.Adapter<CartViewHolder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull CartViewHolder cartViewHolder, int i) {
-        TextDrawable drawable = TextDrawable.builder().buildRound(""+listData.get(i).getQuantity(),Color.RED);
-//        cartViewHolder.img_cart_count.setImageDrawable(drawable);
+    public void onBindViewHolder(@NonNull CartViewHolder holder, int position) {
 
-        Locale locale = new Locale("en", "US");
-        NumberFormat fmt = NumberFormat.getCurrencyInstance(locale);
-//       int price = (Integer.parseInt(listData.get(i).getPrice()))*(Integer.parseInt(listData.get(i).getQuantity()));
-  //      cartViewHolder.txt_price.setText(fmt.format(price));
 
-//        cartViewHolder.txt_cart_name.setText(listData.get(i).getProductName());
+        TextDrawable drawable =TextDrawable.builder()
+                .buildRound(""+listData.get(position).getQuantity(), Color.RED);
+        /*
+        holder.img_cart_count.setImageDrawable(drawable);
+
+        Locale locale =new Locale("en","US");
+        NumberFormat fmt=NumberFormat.getCurrencyInstance(locale);
+        int price =(Integer.parseInt(listData.get(position).getPrice()))*(Integer.parseInt(listData.get(position).getQuantity()));
+        holder.txt_price.setText(fmt.format(price));
+        holder.txt_cart_name.setText(listData.get(position).getProductName());
+
+        */
 
 
     }
+
+
 
 
 

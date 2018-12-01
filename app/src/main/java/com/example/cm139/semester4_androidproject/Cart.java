@@ -102,7 +102,7 @@
                  requests.child(String.valueOf(System.currentTimeMillis()))
                          .setValue(request);
                  new Database(getBaseContext()).cleanCart();
-                 Toast.makeText(Cart.this, "Thank you,Order Place", Toast.LENGTH_SHORT).show();
+                 Toast.makeText(Cart.this, "Thank you,Order Placed..", Toast.LENGTH_SHORT).show();
 
              }
          });
@@ -121,12 +121,15 @@
          adapter=new CartAdapter(cart,this);
          recyclerView.setAdapter(adapter);
 
-    //     int total =0;
-  //       for (Order order:cart)
-//             total +=(Integer.parseInt(order.getPrice()))*(Integer.parseInt(order.getQuantity()));
- //        Locale locale =new Locale("en","US");
-   //      NumberFormat fmt= NumberFormat.getCurrencyInstance(locale);
-    //     txtTotalPrice.setText(fmt.format(total));
+       int total =0;
+       for (Order order:cart){
+//         total +=(Integer.parseInt(order.getPrice()))*(Integer.parseInt(order.getQuantity()));
+//       Locale locale =new Locale("en","US");
+ //      NumberFormat fmt= NumberFormat.getCurrencyInstance(locale);
+   //    txtTotalPrice.setText(fmt.format(total));
 
      }
+     }
  }
+
+

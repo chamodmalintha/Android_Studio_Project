@@ -18,12 +18,13 @@ public class User {
 
 
     public String getPhone() {
+
         return Phone;
     }
 
     public void setPhone(String phone) {
 
-        Password = phone;
+        Phone = phone;
     }
 
     public String getName() {

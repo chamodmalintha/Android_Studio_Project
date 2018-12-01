@@ -22,7 +22,7 @@ import com.squareup.picasso.Picasso;
 
 public class BookDetails extends AppCompatActivity {
 
-    TextView book_name,book_price;
+    TextView book_name,book_price,book_description;
     ImageView book_image;
     CollapsingToolbarLayout collapsingToolbarLayout;
     FloatingActionButton btnCart;
@@ -55,7 +55,9 @@ public class BookDetails extends AppCompatActivity {
                         bookId,
                         currentBook.getName(),
                         numberButton.getNumber(),
-                        currentBook.getPrice()
+                        currentBook.getPrice(),
+                        currentBook.getDiscount()
+
                         //I havent mentioned discount before. in this line i should add discount
 
                 ));
@@ -68,6 +70,7 @@ public class BookDetails extends AppCompatActivity {
         book_name = (TextView)findViewById(R.id.details_book_name);
         book_price = (TextView)findViewById(R.id.book_price);
         book_image = (ImageView)findViewById(R.id.details_img_book);
+
 
         collapsingToolbarLayout = (CollapsingToolbarLayout)findViewById(R.id.collapsing);
         collapsingToolbarLayout.setExpandedTitleTextAppearance(R.style.ExpandedAppBar);
@@ -96,6 +99,7 @@ public class BookDetails extends AppCompatActivity {
 
                 book_price.setText(currentBook.getPrice());
                 book_name.setText(currentBook.getName());
+
 
 
             }
