@@ -4,22 +4,28 @@
 
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_margin="8dp"
     app:cardElevation="4dp"
-    android:layout_marginBottom="8dp"
+    android:background="@color/colorPrimary"
     >
 
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        >
 
         <ImageView
             android:id="@+id/book_image"
-            android:layout_width="133dp"
-            android:layout_height="167dp"
-            android:layout_marginLeft="30sp"
-            android:layout_marginTop="50sp"
-
+            android:layout_width="165dp"
+            android:layout_height="198dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="8dp"
             app:srcCompat="@drawable/loginbackground" />
 
         <TextView
@@ -30,12 +36,12 @@
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             android:layout_marginLeft="200sp"
-            android:layout_marginTop="89dp"
+            android:layout_marginTop="55dp"
 
 
-            android:layout_marginEnd="35dp"
-            android:layout_marginRight="35dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginRight="21dp"
             android:text="Name Of Book"
-            android:textSize="25sp" />
+            android:textSize="20sp" />
     </RelativeLayout>
 </android.support.v7.widget.CardView>
