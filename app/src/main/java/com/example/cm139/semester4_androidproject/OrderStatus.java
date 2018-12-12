@@ -64,13 +64,13 @@ public class OrderStatus extends AppCompatActivity {
 
     private String convertCodeToStatus(String status) {
         if (status.equals("0")){
-            return "placed" ;
+            return " Order Placed" ;
         }
         else if(status.equals("1")) {
             return "on the way";
         }
         else {
-            return "Shipped";
+            return "Order Shipped";
         }
     }
 
