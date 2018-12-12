@@ -19,37 +19,30 @@
             android:layout_height="wrap_content"
             android:layout_weight="9"
             android:orientation="vertical">
-            
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/cart_item_name"
-                android:layout_marginLeft="10dp"
-                android:gravity="center_vertical"
-                android:textAllCaps="true"
-                android:textStyle="bold"
-                android:text="Book 01"
-                />
 
             <TextView
+                android:id="@+id/cart_item_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/cart_item_Price"
                 android:layout_marginLeft="10dp"
                 android:gravity="center_vertical"
+                android:text="Book Name"
                 android:textAllCaps="true"
-                android:textStyle="bold"
-                android:text="100,000"
-                />
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/cart_item_Price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="Book Price"
+                android:textAllCaps="true"
+                android:textStyle="bold" />
             
         </LinearLayout>
 
-        <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:id="@+id/cart_item_count"
-            android:layout_gravity="center_vertical"
-            android:layout_marginRight="16dp"/>
+
 
     </LinearLayout>
 

@@ -15,22 +15,6 @@ public class Book {
         MenuId = menuId;
     }
 
-    public String getDescription() {
-        return Description;
-    }
-
-    public void setDescription(String description) {
-        Description = description;
-    }
-
-    public String getDiscount() {
-        return Discount;
-    }
-
-    public void setDiscount(String discount) {
-        Discount = discount;
-    }
-
     public String getName() {
         return Name;
     }
@@ -47,12 +31,28 @@ public class Book {
         Image = image;
     }
 
+    public String getDescription() {
+        return Description;
+    }
+
+    public void setDescription(String description) {
+        Description = description;
+    }
+
     public String getPrice() {
         return Price;
     }
 
     public void setPrice(String price) {
         Price = price;
+    }
+
+    public String getDiscount() {
+        return Discount;
+    }
+
+    public void setDiscount(String discount) {
+        Discount = discount;
     }
 
     public String getMenuId() {

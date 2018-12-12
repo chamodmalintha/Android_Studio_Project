@@ -1,5 +1,6 @@
 package com.example.cm139.semester4_androidproject;
 
+import android.support.annotation.NonNull;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -28,7 +29,7 @@ public class BookDetails extends AppCompatActivity {
     FloatingActionButton btnCart;
     ElegantNumberButton numberButton;
 
-    String bookId="";
+    String bookId;
 
     FirebaseDatabase database;
     DatabaseReference books;
@@ -72,13 +73,14 @@ public class BookDetails extends AppCompatActivity {
         book_image = (ImageView)findViewById(R.id.details_img_book);
 
 
-        collapsingToolbarLayout = (CollapsingToolbarLayout)findViewById(R.id.collapsing);
+        collapsingToolbarLayout = (CollapsingToolbarLayout) findViewById(R.id.collapsing);
         collapsingToolbarLayout.setExpandedTitleTextAppearance(R.style.ExpandedAppBar);
         collapsingToolbarLayout.setCollapsedTitleTextAppearance(R.style.CollapsedAppBar);
 
         //get BookId from Intent
-        if (getIntent() !=null)
+        if (getIntent() !=null){
             bookId = getIntent().getStringExtra("BookId");
+        }
         if (!bookId.isEmpty()){
             getDetailBook(bookId);
         }
@@ -86,26 +88,21 @@ public class BookDetails extends AppCompatActivity {
 
     }
 
-    private void getDetailBook(String bookId){
-        books.child(bookId).addValueEventListener(new ValueEventListener() {
+    private void getDetailBook(final String foodId) {
+        books.child(foodId).addValueEventListener(new ValueEventListener() {
             @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                currentBook = dataSnapshot.getValue(Book.class);
-
-                //Set Image
-                Picasso.with(getBaseContext()).load(currentBook.getImage()).into(book_image);
-
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                currentBook =dataSnapshot.getValue(Book.class);
+                Picasso.with(getBaseContext()).load(currentBook.getImage())
+                        .into(book_image);
                 collapsingToolbarLayout.setTitle(currentBook.getName());
-
                 book_price.setText(currentBook.getPrice());
+//                book_description.setText(currentBook.getDescription());
                 book_name.setText(currentBook.getName());
-
-
-
             }
 
             @Override
-            public void onCancelled(DatabaseError databaseError) {
+            public void onCancelled(@NonNull DatabaseError databaseError) {
 
             }
         });

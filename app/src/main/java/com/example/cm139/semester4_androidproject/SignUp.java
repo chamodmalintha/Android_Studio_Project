@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+
 import com.example.cm139.semester4_androidproject.Model.User;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -76,3 +77,4 @@ public class SignUp extends AppCompatActivity {
 
     }
 }
+

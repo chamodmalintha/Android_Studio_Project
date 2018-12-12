@@ -4,7 +4,11 @@
 
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="8dp"
+
+
     app:cardElevation="4dp"
     android:background="@color/colorPrimary"
     >
@@ -13,8 +17,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="5dp"
-        >
+        android:layout_marginBottom="5dp">
 
         <ImageView
             android:id="@+id/book_image"
@@ -30,17 +33,21 @@
 
         <TextView
             android:id="@+id/book_name"
-            android:layout_width="wrap_content"
-            android:layout_height="96dp"
+            android:layout_width="129dp"
+            android:layout_height="95dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_marginLeft="200sp"
-            android:layout_marginTop="55dp"
+
+            android:layout_marginStart="23dp"
 
 
-            android:layout_marginEnd="21dp"
-            android:layout_marginRight="21dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="61dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_toEndOf="@+id/book_image"
+            android:layout_toRightOf="@+id/book_image"
             android:text="Name Of Book"
             android:textSize="20sp" />
     </RelativeLayout>

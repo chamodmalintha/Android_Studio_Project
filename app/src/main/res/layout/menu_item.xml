@@ -4,7 +4,10 @@
 
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_margin="8dp"
+    android:layout_marginTop="35dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="8dp"
     app:cardElevation="4dp">
 
     <RelativeLayout
@@ -27,14 +30,18 @@
 
         <TextView
             android:id="@+id/menu_name"
-            android:layout_width="135dp"
-            android:layout_height="61dp"
+            android:layout_width="152dp"
+            android:layout_height="100dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_marginTop="194dp"
-            android:layout_marginEnd="199dp"
-            android:layout_marginRight="199dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_toEndOf="@+id/menu_image"
+            android:layout_toRightOf="@+id/menu_image"
             android:text="Category"
             android:textSize="18sp" />
 
