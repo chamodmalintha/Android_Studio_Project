@@ -76,7 +76,7 @@
      private void showAleartDailog() {
          //Toast.makeText(getApplicationContext(),"fdgdg",Toast.LENGTH_SHORT).show();
          final AlertDialog.Builder alertDialog =new AlertDialog.Builder(Cart.this);
-         alertDialog.setTitle("One more step!..");
+         alertDialog.setTitle("Client Details");
          alertDialog.setMessage("Enter your Address ..");
 
          //final String edtAddress="kjdhgdjkkldjhd";
